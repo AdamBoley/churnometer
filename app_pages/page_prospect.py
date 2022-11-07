@@ -41,7 +41,7 @@ def page_prospect_body():
 	st.info(
         f"* The client is interested in determining whether or not a given prospect will churn. "
         f"If so, the client is interested to know when. In addition the client is "
-        f"interested in learning from which cluster this prospect will belong in the customer base. "
+        f"interested in learning to which cluster this prospect will belong in the customer base. "
         f"Based on that, present potential factors that could maintain and/or bring  "
         f"the prospect to a non-churnable cluster."
 	)
@@ -149,5 +149,6 @@ def DrawInputsWidgets():
 	X_live[feature] = st_widget
 
 	# st.write(X_live)
+    # uncomment this to see the data that has been selected
 
 	return X_live

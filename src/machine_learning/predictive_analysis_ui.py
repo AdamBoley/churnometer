@@ -52,8 +52,8 @@ def predict_tenure(X_live, tenure_features, tenure_pipeline, tenure_labels_map):
 	else:
 		statement = (
 			f"* The model has predicted the prospect would stay **{tenure_levels} months**, "
-			f"however we acknowledge that the recall and precision levels for {tenure_levels} is not "
-			f"strong. The AI tends to identify potential churners, but for this prospect the AI is not "
+			f"however we acknowledge that the recall and precision levels for {tenure_levels} are not "
+			f"strong. The ML model tends to identify potential churners, but for this prospect the ML model is not "
 			f"confident enough on how long the prospect would stay."
 		)
 		
@@ -86,9 +86,9 @@ def predict_cluster(X_live, cluster_features, cluster_pipeline, cluster_profile)
   # text based on "07 - Modeling and Evaluation - Cluster Sklearn" notebook conclusions
 	statement = (
 		f"* The cluster profile interpretation allowed us to label the cluster in the following fashion:\n"
-		f"* Cluster 0 has user without internet, who is a low spender with phone\n"
-		f"* Cluster 1 has user with Internet, who is a high spender with phone\n"
-		f"* Cluster 2 has user with Internet , who is a mid spender without phone"
+		f"* Cluster 0 has users without internet service, who is a low spender with a phone\n"
+		f"* Cluster 1 has users with internet service, who is a high spender with a phone\n"
+		f"* Cluster 2 has users with internet service , who is a mid spender without a phone"
 		)
 	st.success(statement)
 

@@ -25,9 +25,12 @@ def page_cluster_body():
   st.write("### ML Pipeline: Cluster Analysis") 
   # display pipeline training summary conclusions
   st.info(
+        f"We wanted to be able to group customers into several groups. "
+        f"We initially fitted a clustering pipeline using all 17 variables. "
       f"* We refitted the cluster pipeline using fewer variables and it delivered equivalent "
       f"performance to the pipeline fitted using all variables.\n"
-      f"* The pipeline average silhouette score is 0.68"
+      f"* The pipeline average silhouette score is 0.68 \n"
+      f"* We conducted studies that determined the ideal number of clusters to be 3."
       )
   st.write("---")
 

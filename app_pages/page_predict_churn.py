@@ -22,9 +22,9 @@ def page_predict_churn_body():
     st.write("### ML Pipeline: Predict Prospect Churn")  
     # display pipeline training summary conclusions  
     st.info(
-        f"* The pipeline was tuned aiming at least 0.80 Recall on 'Yes Churn' class, "
-        f"since we are interested in this project in detecting a potential churner. \n"
-        f"* The pipeline performance on train and test set is 0.90 and 0.85 respectively."
+        f"* The pipeline was tuned aiming for a Recall score of at least 0.80 on the 'Yes Churn' class, "
+        f"since we are interested in detecting a customer who has the potential to churn. \n"
+        f"* The pipeline performance on the train set is 0.90, and performance on the test set is0.85."
         )
     
 
